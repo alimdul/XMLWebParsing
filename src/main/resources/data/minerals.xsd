@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/minerals"
+        xmlns:tns="http://www.example.com/minerals"
+        elementFormDefault="qualified">
+
+    <element name="minerals">
+        <complexType>
+            <sequence>
+                <element ref="tns:mineral"
+                         minOccurs="16"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="mineral" type="tns:Mineral" abstract="true"/>
+    <element name="precious-stone" type="tns:Precious-stone" substitutionGroup="tns:mineral"/>
+    <element name="semiprecious-stone" type="tns:Semiprecious-stone" substitutionGroup="tns:mineral"/>
+
+    <complexType name="Mineral">
+        <sequence>
+            <element name="color" type="tns:Color"/>
+            <element name="transparence" type="tns:Transparence"/>
+            <element name="value" type="tns:Value"/>
+            <element name="edges-number" type="tns:Edges-number"/>
+        </sequence>
+        <attribute name="minerals-id" type="tns:Minerals-id" use="required"/>
+    </complexType>
+
+    <complexType name="Precious-stone">
+        <complexContent>
+            <extension base="tns:Mineral">
+                <attribute name="name" type="tns:Name" use="required"/>
+                <attribute name="origin" type="tns:Origin" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Semiprecious-stone">
+        <complexContent>
+            <extension base="tns:Mineral">
+                <attribute name="name" type="tns:Name" use="required"/>
+                <attribute name="origin" type="tns:Origin" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="Minerals-id">
+        <restriction base="ID">
+            <pattern value="([a-zA-Z]+\d{1,8})"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Name">
+        <restriction base="string">
+            <pattern value="([a-zA-Z]+(\s[a-zA-Z]+)*)"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Origin">
+        <restriction base="string">
+            <pattern value="([a-zA-Z]+(\s[a-zA-Z]+)*)"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Color">
+        <restriction base="string">
+            <enumeration value="white"/>
+            <enumeration value="black"/>
+            <enumeration value="pink"/>
+            <enumeration value="red"/>
+            <enumeration value="blue"/>
+            <enumeration value="green"/>
+            <enumeration value="brown"/>
+            <enumeration value="violet"/>
+            <enumeration value="yellow"/>
+            <enumeration value="motley"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Edges-number">
+        <restriction base="string">
+            <pattern value="([4-9])|(1[0-4]{1})"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Value">
+        <restriction base="string">
+            <pattern value="\d+\.\d+"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Transparence">
+        <restriction base="string">
+            <enumeration value="true"/>
+            <enumeration value="false"/>
+        </restriction>
+    </simpleType>
+
+</schema>

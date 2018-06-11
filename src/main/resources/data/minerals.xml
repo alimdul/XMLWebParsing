@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<minerals
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.example.com/minerals"
+        xsi:schemaLocation="http://www.example.com/minerals minerals.xsd">
+
+    <precious-stone minerals-id="PreciousStone1" name="Diamond">
+        <color>pink</color>
+        <transparence>true</transparence>
+        <value>0.2</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone2" name="Diamond" origin="Canada">
+        <color>yellow</color>
+        <transparence>true</transparence>
+        <value>0.25</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone3" name="Diamond" origin="Africa">
+        <color>red</color>
+        <transparence>true</transparence>
+        <value>0.16</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone4" name="Corundum" origin="India">
+        <color>red</color>
+        <transparence>false</transparence>
+        <value>0.25</value>
+        <edges-number>10</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone5" name="Corundum" origin="India">
+        <color>yellow</color>
+        <transparence>true</transparence>
+        <value>0.32</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone6" name="Spinel" origin="India">
+        <color>white</color>
+        <transparence>true</transparence>
+        <value>0.32</value>
+        <edges-number>8</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone7" name="Sapphire" origin="Australia">
+        <color>blue</color>
+        <transparence>true</transparence>
+        <value>0.3</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone8" name="Sapphire" origin="USA">
+        <color>blue</color>
+        <transparence>false</transparence>
+        <value>0.26</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone9" name="Dioptase" origin="Chile">
+        <color>green</color>
+        <transparence>false</transparence>
+        <value>0.26</value>
+        <edges-number>14</edges-number>
+    </precious-stone>
+
+    <precious-stone minerals-id="PreciousStone10" name="Dioptase" origin="USA">
+        <color>blue</color>
+        <transparence>false</transparence>
+        <value>0.28</value>
+        <edges-number>10</edges-number>
+    </precious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone1" name="Amethyst" origin="Ural">
+        <color>violet</color>
+        <transparence>true</transparence>
+        <value>0.32</value>
+        <edges-number>4</edges-number>
+    </semiprecious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone2" name="Amethyst" origin="Brazil">
+        <color>red</color>
+        <transparence>true</transparence>
+        <value>0.34</value>
+        <edges-number>8</edges-number>
+    </semiprecious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone3" name="Aquamarine" origin="Madagascar">
+        <color>blue</color>
+        <transparence>true</transparence>
+        <value>0.4</value>
+        <edges-number>8</edges-number>
+    </semiprecious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone4" name="Topaz" origin="Ural">
+        <color>brown</color>
+        <transparence>true</transparence>
+        <value>0.28</value>
+        <edges-number>12</edges-number>
+    </semiprecious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone5" name="Chrysolite" origin="USA">
+        <color>green</color>
+        <transparence>true</transparence>
+        <value>0.22</value>
+        <edges-number>14</edges-number>
+    </semiprecious-stone>
+
+    <semiprecious-stone minerals-id="SemipreciousStone6" name="Malachite">
+        <color>green</color>
+        <transparence>false</transparence>
+        <value>0.44</value>
+        <edges-number>4</edges-number>
+    </semiprecious-stone>
+
+</minerals>
